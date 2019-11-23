@@ -5,6 +5,7 @@ import UseEffect from './components/UseEffect';
 import UseFecth from './components/UseFecth';
 import UseAsync from './components/UseAsync';
 import UseReducer from './components/UseReducer';
+import Timer from './components/Timer';
 
 export default function Index() {
   return (
@@ -16,12 +17,14 @@ export default function Index() {
           <li><Link to='/use/fetch'>The custom React Hooks</Link></li>
           <li><Link to='/use/async'>use async/await with useEffect</Link></li>
           <li><Link to='/use/reducer'>useReducer</Link></li>
+          <li><Link to='/timer'>Timer</Link></li>
         </ul>
         <Route path='/use/state' exact component={UseState}></Route>
         <Route path='/use/effect' exact component={UseEffect}></Route>
         <Route path='/use/fetch' exact component={UseFecth}></Route>
         <Route path='/use/async' exact component={UseAsync}></Route>
         <Route path='/use/reducer' exact component={UseReducer}></Route>
+        <Route path='/timer' exact component={Timer}></Route>
       </div>
     </Router>
   )

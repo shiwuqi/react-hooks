@@ -1,0 +1,26 @@
+.timer-all {
+  display: flex;
+  justify-content: center;
+}
+
+.timer-card {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.timer-card h4 {
+  position: relative;
+  font-size: 36px;
+}
+
+.timer-card h4::after {
+  position: absolute;
+  content: ':';
+  bottom: 5px;
+  right: -25px;
+  font-size: 30px;
+}
+
+.timer-card:last-child h4::after {
+  content: '';
+}
