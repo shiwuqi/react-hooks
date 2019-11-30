@@ -1,6 +1,7 @@
 import * as React from 'react';
 const { useState, useMemo } = React;
 
+// function useMemo<T>(factory: () => T, deps: DependencyList | undefined): T;
 // useMemo 会在组件第一次渲染的时候执行，之后会在其依赖的变量发生改变时再次执行，返回缓存的变量
 
 

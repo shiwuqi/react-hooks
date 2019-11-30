@@ -1,6 +1,7 @@
 import * as React from 'react';
 const { useState, useEffect, useCallback, memo } = React;
 
+// function useCallback<T extends (...args: any[]) => any>(callback: T, deps: DependencyList): T;
 // useCallback 会在组件第一次渲染的时候执行，之后会在其依赖的变量发生改变时再次执行，返回返回缓存的函数
 
 const ExpensiveComputationComponent = memo(({ compute, count } : { compute: (count: number) => number; count: number }) => {
