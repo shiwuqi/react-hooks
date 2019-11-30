@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.css';
-const { useState, useEffect } = React;
+const { useState, useEffect, useCallback } = React;
 let timer: NodeJS.Timer | null = null;
 
 // 月份及日期前面添加0
@@ -31,7 +31,7 @@ function Timer(props: { time?: TimeType }) {
   }, [props.time]);
 
   // 倒计时
-  function countDown() {
+  const countDown = useCallback(() => {
     timer = setInterval(() => {
       setDate((date: TimeType) => {
         let { hour, minute, second } = date;
@@ -53,8 +53,8 @@ function Timer(props: { time?: TimeType }) {
           second,
         }
       })
-    }, 1000);
-  }
+    }, 1000)
+  }, []);
 
   return (
     <div className='timer-all' >
