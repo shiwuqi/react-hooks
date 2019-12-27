@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
+import { addZero } from '../utils/util';
 
 let timer: NodeJS.Timer | null = null;
-
-// 月份及日期前面添加0
-export var addZero = function (val: string | number) {
-  return Number(val) < 10 ? '0' + Number(val) : val.toString();
-}
 
 export interface TimeType {
   hour: string;
