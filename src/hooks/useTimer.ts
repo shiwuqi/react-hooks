@@ -10,18 +10,18 @@ export interface TimeType {
 }
 
 export default function useTimer(props: { time?: TimeType }) {
-  const [date, setDate] = useState({
+  const time = props.time || {
     hour: '00',
     minute: '00',
     second: '00',
-  })
+  };
+  const [date, setDate] = useState(time)
 
   useEffect(() => {
-    if (timer) clearInterval(timer);
-    if (props.time) setDate(props.time);
+    timer && clearInterval(timer);
     countDown();
     return () => {
-      if (timer) clearInterval(timer);
+      timer && clearInterval(timer);
     }
   }, [props.time]);
 

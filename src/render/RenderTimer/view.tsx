@@ -20,7 +20,7 @@ export default class RenderTimer extends React.Component<{ render: (state: TimeT
     }
 
     componentDidMount() {
-        if (this.timer) clearInterval(this.timer);
+        this.timer && clearInterval(this.timer);
         if (this.props.time) {
             this.setState({
                 ...this.props.time
@@ -58,7 +58,7 @@ export default class RenderTimer extends React.Component<{ render: (state: TimeT
     };
 
     componentWillUnmount() {
-        if (this.timer) clearInterval(this.timer);
+        this.timer && clearInterval(this.timer);
     }
 
     render() {

@@ -24,9 +24,8 @@ const WrapTimer = (WrapComponent: React.ComponentType<any>) => {
         }
 
         componentDidMount() {
-            if (this.timer) clearInterval(this.timer);
+            this.timer && clearInterval(this.timer);
             if (this.props.time) {
-
                 this.setState({
                     ...this.props.time
                 }, () => {
@@ -63,7 +62,7 @@ const WrapTimer = (WrapComponent: React.ComponentType<any>) => {
         };
 
         componentWillUnmount() {
-            if (this.timer) clearInterval(this.timer);
+            this.timer && clearInterval(this.timer);
         }
 
         render() {
