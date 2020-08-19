@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@_shiqi/timer@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@_shiqi/timer/-/timer-0.1.0.tgz#76ca97c0940b8e49abbf07904bca71935ea85ac2"
+  integrity sha512-zh9jWM53m5rKb8quGA0o6IyXeokL7sWPwSPwLRRhMLUnyF7LzxxP5D7020a65fB2ZlvKD+jISrImls8q7DlNMA==
+
 "@babel/code-frame@7.5.5", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
   resolved "https://registry.npm.taobao.org/@babel/code-frame/download/@babel/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"

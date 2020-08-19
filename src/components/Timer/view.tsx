@@ -1,6 +1,9 @@
 import * as React from 'react';
 import './style.css';
-import useTimer, { TimeType } from '../../hooks/useTimer';
+// import useTimer, { TimeType } from '../../hooks/useTimer';
+import useTimer, { TimeType } from '@_shiqi/timer';
+
+console.log(useTimer);
 
 function Timer(props: { time?: TimeType; className?: string; }) {
   const date = useTimer({ time: props.time });
