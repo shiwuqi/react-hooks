@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './style.css';
 // import useTimer, { TimeType } from '../../hooks/useTimer';
-import useTimer, { TimeType } from '@_shiqi/timer';
+import useTimer, { TimeType } from '@ireact-hooks/timer';
 
 console.log(useTimer);
 
