@@ -1,0 +1,84 @@
+.progressBar {
+	position: relative;
+	height: 32px;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	user-select: none;
+	z-index: 2;
+}
+
+.progressBarBtn {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	margin-right: 16px;
+}
+
+.progressBarTime {
+	// width: 50px;
+	// text-align: center;
+	// font-size: 12px;
+	// color: #fff;
+	// white-space: nowrap;
+	width: 42px;
+	font-size: 14px;
+	font-family: PingFangSC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #ffffff;
+	white-space: nowrap;
+	margin-block-start: 6px;
+	margin-block-end: 6px;
+}
+
+.progressBarBilderWrap {
+	margin-left: 8px;
+	margin-right: 16px;
+	flex: 1;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.progressBarSilder {
+	height: 2px;
+	border-radius: 2px;
+	background: rgba(255, 255, 255, 0.4);
+	position: relative;
+	display: flex;
+	flex: 1;
+	align-items: center;
+}
+
+.progressBarSilderInner {
+	background: #ffc815;
+	height: 2px;
+	border-radius: 2px;
+}
+
+.progressBarSilderRound {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: rgba(255, 186, 0, 0.35);
+	// opacity: 0.35;
+	transform: translate(-6px, -50%);
+	position: absolute;
+	top: 50%;
+	> div {
+		width: 8px;
+		height: 8px;
+		background: linear-gradient(90deg, #ffd118 0%, #ffba00 100%);
+		border-radius: 50%;
+	}
+}
+
+/* 图片容器（填满不拉伸） */
+.gImgCover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
